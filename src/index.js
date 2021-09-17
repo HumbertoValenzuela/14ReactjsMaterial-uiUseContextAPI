@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+
 
 ReactDOM.render(
   <React.StrictMode>
@@ -11,7 +11,12 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// CONTEXT API. Cuenta con un hook useContext
+// Puedes pasar el state o funciones desde el componente principal hasta los hijos, sin necesidad de pasarlo por cada componente
+// Recuerda que en React solo pasas los datos del componente principal al hijo.
+// También se puede actualizar el state desde el hijo. (ejecutar una función que lo actualice)
+
+// ¿Los props son obsoletos?
+// Node, aún se puede utilizar los Props, así es como React fue diseñado y el 90% de las aplicaciones React así están hechas.
+// Context hace un poco más complicado la reutilización de componente
+
